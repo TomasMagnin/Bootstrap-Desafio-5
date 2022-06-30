@@ -1,0 +1,179 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/*------------------------------------------- Titulo, Imagen ----------------------------------------------------------*/
+
+.header-Titulo-Imagen{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to left, blueviolet, #4F24AB, #4F24AB, orange );
+}
+
+.header-img img{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    margin: 10px;
+    animation-name: Logo;
+    animation-duration: 10s;
+    transition-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes Logo{
+    0%{
+        transform: rotateY(90deg);
+        transition-duration: .5s;
+    }    
+    25% {
+        transform: rotateY(90deg);
+        transition-duration: .5s;
+    }
+
+    
+    50% {
+        transform: rotateY(180deg);
+        transition-duration: .5s;
+    }
+
+    75% {
+        transform: rotateY(270deg);
+        transition-duration: .5s;
+    }
+
+    100% {
+        transform: rotateY(360deg);
+        transition-duration: .5s;
+
+    }
+}
+
+/*------------------------------------------- Titulo, Imagen ----------------------------------------------------------*/
+
+
+/* -------------------------------------------- Buscador --------------------------------------------------------------*/
+
+.buscador button{
+    background-color: red;
+    color: whitesmoke;
+    
+}
+
+.buscador button :hover{
+    background-color: white;
+    color: whitesmoke;
+    
+}
+
+/* -------------------------------------------- Fin Buscador ----------------------------------------------------------*/
+
+
+/* -------------------------------------------- Navbar ----------------------------------------------------------------*/
+
+.navbar {
+    background: linear-gradient(to left, blueviolet, #4F24AB, #4F24AB, orange );
+    /* padding de la Nav Serch */
+    --bs-navbar-padding-x: 5px;
+    --bs-navbar-padding-y: 1rem;
+    
+    /* Color de Font Nav */
+    --bs-navbar-color: whitesmoke;
+    
+    /* Hover nav color */
+    --bs-navbar-hover-color: whitesmoke;
+    
+    /* Boton Home  */
+    --bs-navbar-active-color: whitesmoke;
+    
+    /* Subtit Categoria */
+    --bs-navbar-brand-font-size: 1.5rem;
+    --bs-navbar-brand-color: whitesmoke;
+    --bs-navbar-brand-hover-color: whitesmoke;
+     --bs-navbar-nav-link-padding-x: 3rem;
+
+    /* Toggler */
+    --bs-navbar-toggler-padding-y: 0.50rem;
+    --bs-navbar-toggler-padding-x: 0.75rem;
+    --bs-navbar-toggler-font-size: 1.5rem;
+    --bs-navbar-toggler-border-color: whitesmoke;
+    --bs-navbar-toggler-border-radius: 0.4rem;
+    --bs-navbar-toggler-focus-width: 0.35rem;
+    --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+    
+}
+
+.nav-item :hover{
+
+    transform: scale(1.2);
+    background: linear-gradient(to right, red, orange)
+
+}
+/* ---------------------------------------- Fin Navbar ----------------------------------------------------------------*/
+
+/* ----------------------------------------------- Main ---------------------------------------------------------------*/
+
+
+.main{
+    background-color: blueviolet;
+    color: whitesmoke;
+}
+
+.card__titulo-h3{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.card__texto{
+    font-size: 1.5rem;
+}
+
+.card-imagen :hover{
+    transform: scale(1.2);
+} 
+
+
+
+
+
+/* -------------------------------------------- Fin Main --------------------------------------------------------------*/
+
+
+/* -------------------------------------------- Inicio Mapa -----------------------------------------------------------*/
+
+.card-contact {
+    background-color: blueviolet;
+    color: whitesmoke;
+}
+
+/* .map{
+    width: 98vw;
+    margin: 5px;   
+}
+ */
+
+
+
+/* -------------------------------------------- FIn Mapa --------------------------------------------------------------*/
+
+
+/* -------------------------------------------- Inicio de Footer ------------------------------------------------------*/
+.footer{
+    background-color: #203239;
+    color: whitesmoke;
+}
+
+footer a{
+    color: whitesmoke;
+}
+
+
+.footer__sec a :hover{
+
+    color:  orange;
+}
+/* -------------------------------------------- FIn Footer --------------------------------------------------------------*/
