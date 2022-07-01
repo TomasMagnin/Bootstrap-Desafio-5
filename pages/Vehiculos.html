@@ -8,93 +8,67 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Market Online</title>
 </head>
 <body>
 <header>    
 <!-- Inicio de Header -->
 
-   <!--  <header class="header">
-
-        <div class="header-main">
-            <h1 class="header-h1">Market <br> Online</h1>
-            <div class="header-img">
-                <img src="./assets/images/Market Online.png" alt="Logo">
-            </div>
-
-            <div class="header-boton-buscador">
-                <div class="header-buscador">
-                    <input type="text">
-                </div>
-                <div>
-                    <button class="header-boton">Buscar</button>
-                </div>
-                <div class="vacio"></div>
-            </div>    
-        </div> -->
-
 <!-- Aplicamos Titulo, Imagen, y Serch  -->
 
-
-<div class="row">
+<div>
 
     <div class="header-Titulo-Imagen">
-        <div>
-            <h1 class="header-h1">Market Online</h1>
-        </div>
-        <div class="header-img">
-            <img src="./assets/images/Market Online.png" alt="Logo">
-        </div>
-        
-        </div>
-    </div>
-
-    <nav class="navbar buscador">
-        <div class="container col-3">
-          <form class="d-flex " role="search">
-            <input class="form-control me-2 " type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn  " type="submit">Buscar</button>
-          </form>
-        </div>
-      </nav>
+        <div class="d-flex justify-content-center p-2">
+            <div class="">
+                <h1 class="header-h1">Market Online</h1>
+            </div>
+            <div class="header-img ">
+                <img src="../assets/images/Market Online.png" alt="Logo">
+             </div>
+            <div class="buscador align-self-center m-4">
+                <form class="">
+                  <input  type="search" placeholder="Buscar">
+                  <button>Buscar</button>
+                </form>
+            </div>
+        </div>    
 </div>
-
-
 
 <!-- Fin de Titulo, Imagen, y Serch  -->
 
+<!-- Aplicamos una Navbar utilizando un componente de Bootstrap y lo edite para adaptarlo a la pagina-->
 
-
-<!-- Aplicamos una Navbar con Bootstrap, utilizando un componente de Bootstrap -->
-
-<nav class="navbar navbar-expand-lg  container-fluid nv">
-    <div class="container ">
-      <a class="navbar-brand" href="index.html">Categorias</a>
+<nav class="navbar navbar-expand-lg nv">
+    <div class="container-fluid ">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand">Categorias</a>
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <li>
+            <a class="nav-link active" aria-current="page">Categorias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pages/Vehiculos.html">Vehículos</a>
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pages/Tecnologia.html">Tecnología</a>
+            <a class="nav-link" href="./Vehiculos.html">Vehículos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pages/Herramientas.html">Herramientas</a>
+            <a class="nav-link" href="./Tecnologia.html">Tecnología</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pages/Electrodomesticos.html">Electrodomésticos</a>
+            <a class="nav-link" href="./Herramientas.html">Herramientas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pages/Contactos.html">Contactos</a>
+            <a class="nav-link" href="./Electrodomesticos.html">Electrodomésticos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Contactos.html">Contactos</a>
           </li>
         </ul>
       </div>
@@ -105,93 +79,113 @@
 
 </header>
 
-    <!-- Fin del Header -->
+<!-- Fin del Header -->
 
-
-    <!-- Inicio de Main -->
+<!--Inicio de Main -->
     
     <!-- Aplico la el uso de la grilla que no va ser tan estetico como un carrusel y no el carrusel ya que en clase,
          nos dijeron que era mas importante el uso de las grillas y comprension de clases que copiar el codigo de algun componente -->
 
-    <main>
-        <section class="main">
-            <div class="card-Vehículos container-fluid ">
-                <h3 class="card__titulo-h3 text-center p-2">Marcas Destacadas en Vehículos</h3>
-                <p class="card__texto text-center p-3 mb-1">Aca les presentamos un resumen de algunas de las marcas destacadas de Vehículos, lideres en ventas. </p>
-                <div class="card-imagen row d-flex mb-3 pb-3">   
-                    <img src="./assets/images/Vehículos/Yamaha.jpg" class="card__image-1 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">
-                    <img src="./assets/images/Vehículos/Jepp.jpg" class="card__image-2 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">
-                    <img src="./assets/images/Vehículos/ford.jpg" class="card__image-3 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">    
-                </div>
-                <div class="card-imagen row d-flex mb-3 pb-3">
-                    <img src="./assets/images/Vehículos/Chevrolet.jpg" class="card__image-5 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">
-                    <img src="./assets/images/Vehículos/Volkswagen.PNG" class="card__image-4 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">
-                    <img src="./assets/images/Vehículos/Zanella.jpg" class="card__image-6 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">
-                </div>
+<main>
+    <section class="main">
+        <div class="card-Vehículos container-fluid ">
+            <h3 class="card__titulo-h3 text-center p-2">Marcas Destacadas en Autos</h3>
+            <p class="card__texto text-center p-3 mb-1">Aca les presentamos un resumen de algunas de las marcas destacadas de Autos, lideres en ventas. </p>
+            <div class="card-imagen row mb-3 pb-3">   
+                <img src="../assets/images/Vehículos/Toyota.png" class="card__image-1 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">
+                <img src="../assets/images/Vehículos/Jepp.jpg" class="card__image-2 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">
+                <img src="../assets/images/Vehículos/ford.jpg" class="card__image-3 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">    
             </div>
-            
-       
-        <!-- Inicio Ubicación -->
-        <section class="card-contact container-fluid ">
-            <div class="div_titulo_mapa text-center m-4">
-                <h3 class="title__map">Ubicación de Nuestras Oficinas</h3>
+            <div class="card-imagen row mb-3 pb-3">
+                <img src="../assets/images/Vehículos/Chevrolet.jpg" class="card__image-5 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">
+                <img src="../assets/images/Vehículos/Volkswagen.PNG" class="card__image-4 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">
+                <img src="../assets/images/Vehículos/Subaru.jpg" class="card__image-6 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">
             </div>
-            <div class="row">
-                <div class="mapa ">
-                    <iframe class="map col-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.900458145938!2d-64.1872931115183!3d-31.416868521381446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329902eb0b2faf%3A0x4382bb478dc6e982!2sPlaza%20San%20Mart%C3%ADn!5e0!3m2!1ses!2sar!4v1653885232923!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+         <div class="card-Motos container-fluid">
+                <h3 class="card__titulo-h3 text-center p-3">Marcas Destacadas en Motos</h3>
+                <p class="card__texto text-center p-3 mb-3">Aca les presentamos un resumen de algunas de las marcas destacadas de Motos, lideres en ventas.</p>
+                <div class="card-imagen row mb-3 pb-3">
+                    <img src="../assets/images/Vehículos/Motos/Yamaha.jpg"class="card__image-1 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">
+                    <img src="../assets/images/Vehículos/Motos/Ducati.png"class="card__image-2 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">
+                    <img src="../assets/images/Vehículos/Motos/Honda.png"class="card__image-3 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">    
                 </div>
-            </div>    
-            </section>
-        <!-- Fin Ubicación -->
-    
-    </main>
-    <!-- Fin del Main -->
-
-    <!-- Inicio del Footer o Pie de Página -->
-
-    <footer class="footer container-fluid">
+                <div class="card-imagen row mb-3 pb-3">
+                    <img src="../assets/images/Vehículos/Motos/Kawa.png"class="card__image-4 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">
+                    <img src="../assets/images/Vehículos/Motos/KTM.jpg"class="card__image-5 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">
+                    <img src="../assets/images/Vehículos/Motos/Suzuki.png"class="card__image-6 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">
+                </div>    
+            </div>
+            <div class="card-Bicicletas container-fluid">
+                <h3 class="card__titulo-h3 text-center p-3">Marcas Destacadas en Bicicletas</h3>
+                <p class="card__texto text-center p-3 mb-3">Aca les presentamos un resumen de algunas de las marcas destacadas de Bicicletas, lideres en ventas.</p>
+                <div class="card-imagen row mb-3 pb-3">  
+                    <img src="../assets/images/Vehículos/Bici/Giant.png"class="card__image-1 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">
+                    <img src="../assets/images/Vehículos/Bici/Konna.png"class="card__image-2 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">
+                    <img src="../assets/images/Vehículos/Bici/Santa Cruz.png"class="card__image-3 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">                    
+                </div>
+                <div class="card-imagen row mb-3 pb-3">
+                    <img src="../assets/images/Vehículos/Bici/Scott.png"class="card__image-4 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">
+                    <img src="../assets/images/Vehículos/Bici/Specialized.png"class="card__image-5 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">
+                    <img src="../assets/images/Vehículos/Bici/Trek.jpg"class="card__image-6 col-2 img-fluid mx-auto d-block img-thumbnail" alt="">
+                </div>    
+            </div>      
+    </section>
+   
+    <!-- Inicio Ubicación -->
+    <section class="card-contact container-fluid ">
+        <div class="div_titulo_mapa text-center row p-3">
+            <h3 class="title__map col">Ubicación de Nuestras Oficinas</h3>
+        </div>
         <div class="row">
-            <div class="footer__titulo col-12 text-center p-3">
-                <h4>Market Online</h4>
-            </div>
+                <iframe class="map col-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.900458145938!2d-64.1872931115183!3d-31.416868521381446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329902eb0b2faf%3A0x4382bb478dc6e982!2sPlaza%20San%20Mart%C3%ADn!5e0!3m2!1ses!2sar!4v1653885232923!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>    
+        </section>
+    <!-- Fin Ubicación -->
 
-            <div class=" col-1"></div>
-            <div class="footer__sec-1 col-3">
-                <h4>Redes Sociales</h4>
-                <div>
-                    <ul>
-                        <li><a href="">Instagram</a> </li>
-                        <li><a href="">Facebook</a> </li>
-                        <li><a href="">Twitter</a> </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer__sec-2 col-4">
-                <h4>Quienes Somos</h4>
-                <div>
-                    <p>Una empresa lider en ventas, con mas de 50 años en el rubro.</p>
-                </div>
-            </div>
-
-            <div class="footer__sec-3 col-3 ">
-                <h4>Mi Cuenta</h4>
-                <div>
-                    <ul>
-                        <li><a href="">Ingresar</a> </li>
-                        <li><a href="">Vender</a></li>
-                    </ul>
-                </div>
-                <div class="col-1"></div>
-            </div>
-            <div class="footer__pie col-12 text-center "> 
-                <h4>Copyright 2022 Tomas Magnin - Todos los Derechos Reservados</h4>
+</main>
+<!-- Fin del Main -->
+<!-- Inicio del Footer o Pie de Página -->
+<footer class="footer container-fluid">
+    <div class="row  text-center">
+        <div class="footer__titulo col p-3">
+            <h4>Market Online</h4>
+        </div>
+    </div>    
+    <div class="row">    
+        <div class="footer__sec-1  col-4">
+            <h4>Redes Sociales</h4>
+            <div>
+                <ul>
+                    <li><a href="">Instagram</a> </li>
+                    <li><a href="">Facebook</a> </li>
+                    <li><a href="">Twitter</a> </li>
+                </ul>
             </div>
         </div>
-    </footer>
-
-    <!-- Fin de Footer o Pie de Pagina -->
+        <div class="footer__sec-2 col-4">
+            <h4>Quienes Somos</h4>
+            <div>
+                <p>Una empresa lider en ventas, con mas de 50 años en el rubro.</p>
+            </div>
+        </div>
+        <div class="footer__sec-3 col-4 ">
+            <h4>Mi Cuenta</h4>
+            <div class="">
+                <ul>
+                    <li><a href="">Ingresar</a> </li>
+                    <li><a href="">Vender</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+    <div class="row">    
+        <div class="footer__pie col-12 text-center p-2 "> 
+            <h4>Copyright 2022 Tomas Magnin - Todos los Derechos Reservados</h4>
+        </div>   
+    </div>
+</footer> 
+<!-- Fin de Footer o Pie de Pagina -->
 <script src="./js/bootstrap.js"></script>
-
 </body>
 </html>
